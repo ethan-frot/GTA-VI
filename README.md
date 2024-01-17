@@ -4,4 +4,4 @@ This project served as a partial test of how far we'd come, and was intended to 
 
 Thanks to the **[starter](./starter/)** and the **[pdf](/starter/subject.pdf)**, we had to make the model.
 
-[![](/images/model-preview.png)](./images/model.mp4)
+![GTA VI Gif](./images/model.gif)
