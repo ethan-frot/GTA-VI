@@ -1,0 +1,109 @@
+.carousel-container{
+    height: 100%;
+    background-size: 120% auto;
+}
+.slides {
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+    width: 50vw;
+    padding: 40px;
+}
+.card {
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid rgba(219, 219, 219, .1);
+
+    &.active {
+        border: 1px solid rgba(219, 219, 219, 1);
+        box-shadow: 0 0 18px 15px rgba(219, 219, 219, 0.3);
+    }
+    &-text {
+        display: none;
+    }
+}
+#title {
+    font-size: 9rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #fff;
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    color: #FFFFFF;
+    -webkit-text-stroke: 5px #000000;
+    text-stroke: 5px #000000;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    letter-spacing: -10px;
+    font-family: 'Roboto', serif;
+}
+#text {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #fff;
+    position: absolute;
+    top: 45%;
+    left: 10%;
+    width: 50%;
+}
+.revalTitle {
+    animation: revalTitle 0.5s ease-in-out;
+}
+.revalText {
+    animation: revalText 0.5s ease-in-out;
+}
+.left-action,
+.right-action {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+.left-action:hover,
+.right-action:hover {
+    background-color: #f1f1f1;
+}
+.left-action {
+    left: 5px;
+}
+.right-action {
+    right: 5px;
+}
+.slides {
+    overflow: hidden;
+}
+.card-list {
+    transition: all 0.3s ease-out;
+}
+
+@keyframes revalTitle {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes revalText {
+    0% {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

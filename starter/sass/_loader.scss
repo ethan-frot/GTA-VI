@@ -1,0 +1,76 @@
+#loader{
+    background-image: url("./images/bg.jpeg");
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-position: center;
+    z-index: 99;
+
+    &:not(.hidden){
+        animation: loader 2s ease-in-out forwards;
+    }
+    
+    &.hidden{
+        animation: hidden 2s ease-in-out forwards;
+
+        .close {
+            display: none !important;   
+        }
+    }
+}
+.close{
+    background-color: #000000;
+    height: 100px;
+    position: fixed;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    animation: close 2s ease-in-out forwards;
+
+    &:hover{
+        background-color: #303030;
+    }
+}
+
+
+@keyframes close {
+    0% {
+        opacity: 0;
+        bottom: -300px;
+    }
+    100% {
+        opacity: 1;
+        bottom: 0px;
+    }
+    
+}
+@keyframes loader{
+    0%{
+        background-size: 140%;
+    }
+    100%{
+        background-size: 100%;
+    }
+}
+@keyframes hidden{
+    0%{
+        opacity: 1;
+    }
+    90%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+        display: none;
+    }
+}
