@@ -164,13 +164,11 @@ leftAction.addEventListener("click", () => {
   if (currentPosition < 0) {
     currentPosition += 200;
     cardListElement.style.transform = `translateX(${currentPosition}px)`;
-    console.log(currentPosition);
   }
 });
 rightAction.addEventListener("click", () => {
-  if (currentPosition > -800) {
+  if (currentPosition > -1000) {
     currentPosition -= 200;
     cardListElement.style.transform = `translateX(${currentPosition}px)`;
-    console.log(currentPosition);
   }
 });

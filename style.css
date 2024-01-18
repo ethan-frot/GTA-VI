@@ -95,6 +95,24 @@ body {
   left: 0;
 }
 
+.news {
+  padding: 150px 0px;
+  color: #fff;
+}
+.news .card-body {
+  padding: 20px;
+  font-weight: 700;
+}
+.news .card-body .text-grey {
+  color: rgb(212, 212, 212);
+  font-weight: 200;
+}
+.news .card {
+  color: #fff;
+  background-color: transparent;
+  box-shadow: 0px 0px 45px -25px rgba(255, 255, 255, 0.2);
+}
+
 .carousel-container {
   height: 100%;
   background-size: 120% auto;
